@@ -29,15 +29,15 @@ namespace Tyuiu.SokolovaHS.Sprint1.Task0.V12
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int km;
+            int m;
 
             Console.WriteLine("Введите значение X:");
-            km = Convert.ToInt32(Console.ReadLine());
+            m = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("Расстояние в километрах = " + ds.ConvertKmToM(km));
+            Console.WriteLine("Расстояние в милях = " + ds.ConvertKmToM(m));
             Console.ReadLine();
         }
     }
