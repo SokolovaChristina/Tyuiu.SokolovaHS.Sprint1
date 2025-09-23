@@ -12,9 +12,9 @@ namespace Tyuiu.SokolovaHS.Sprint1.Task7.V26.Test
         {
             DataService ds = new DataService();
             double x = 2;
-            double y = 3;
+            double y = 4;
             var res = ds.Calculate(x, y);
-            Assert.AreEqual(-3.696, res);
+            Assert.AreEqual(0.754, res);
         }
     }
 }
