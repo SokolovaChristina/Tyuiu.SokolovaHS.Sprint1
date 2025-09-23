@@ -20,7 +20,7 @@ namespace Tyuiu.SokolovaHS.Sprint1.Task6.V4.Lib
 
             IEnumerable<string> result = words.Where(word => word.Contains("нн"));
 
-            return string.Join(", ", result);
+            return string.Join(" ", result);
         }
  }
 }
