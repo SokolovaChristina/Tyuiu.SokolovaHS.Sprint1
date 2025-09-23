@@ -11,11 +11,15 @@ namespace Tyuiu.SokolovaHS.Sprint1.Task7.V26.Lib
     {
         public double Calculate(double x, double y)
         {
-            double part1 = ((Math.Pow(Math.Sin(x), 2) / 180 / Math.PI) + y) / (y + 1.0);
-            double part2 = ((x * y) - 12.0) / (34.0 + Math.Pow(x, 2));
-            double z = part1 - part2;
-            return Math.Round(z, 3);
+            double sinXSquare = Math.Sin(x * x);
+            double numerator1 = sinXSquare + y;
+            double denominator1 = y + 1;
 
+            double numerator2 = (x * y) - 12;
+            double denominator2 = 34 + x * x;
+
+            double z = (numerator1 / denominator1) - (numerator2 / denominator2);
+            return Math.Round(z,3);
         }
     }
 }
